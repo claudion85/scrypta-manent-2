@@ -1,0 +1,43 @@
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="theme-bg"></div>
+  <div class="auth-content">
+
+    <!-- Logo -->
+    <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h4 no-margin>
+        <ion-text color="light" class="fw700">
+          Scrypta Manent
+        </ion-text>
+      </h4>
+    </div>
+</div>
+
+    <ion-item>
+
+        <ion-button icon-left size="medium" expand="full"  shape="round" color="dark"  tappable>
+          Login With .Sid File
+        </ion-button>
+
+
+    </ion-item>
+    <ion-item>
+
+        <ion-button icon-left size="medium" expand="full"  shape="round" color="dark" (click)="readNfc()" tappable>
+          Login With Card
+        </ion-button>
+
+
+    </ion-item>
+    <ion-item>
+
+        <ion-button icon-left size="medium" expand="full"  shape="round" color="dark" (click)="readQrCode()" tappable>
+          Login With QR.Code
+        </ion-button>
+
+
+    </ion-item>
+
+
+
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="theme-bg"></div>
+<!-- Logo -->
+<div class="auth-content">
+<div padding-horizontal text-center class="animated fadeInDown">
+  <div class="logo"></div>
+  <h4 no-margin>
+    <ion-text color="light" class="fw700">
+      Congratulations
+    </ion-text>
+    
+  </h4>
+  <ion-text color="light">Your account is now ready to use. </ion-text>
+</div>
+
+<ion-item no-padding class="animated fadeInUp">
+  <ion-label position="floating" color="light">
+   
+    Download now your .sid file for future accesses and click on Next
+  </ion-label>
+  
+  <ion-input color="secondary" type="text" [(ngModel)]='sidFile'></ion-input>
+  
+</ion-item>
+
+<ion-button icon-left size="medium" expand="half" float="right" shape="round" color="dark" (click)="prev()" id="downloadsid"tappable>
+  <ion-icon name="log-in"></ion-icon>
+  Prev
+</ion-button>
+<ion-button icon-left size="medium" expand="half" float="right" shape="round" color="dark" (click)="goToLog()" tappable>
+  <ion-icon name="log-in"></ion-icon>
+  Next
+</ion-button>
+</div>
+  </ion-content>
